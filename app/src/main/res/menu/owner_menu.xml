@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_owner_profile"
+        android:title="My Profile"
+        android:icon="@drawable/ic_profile"/>
+    <item
+        android:id="@+id/nav_dashboard"
+        android:title="@string/nav_dashboard"
+        android:icon="@drawable/ic_dashboard"
+        android:orderInCategory="1"/>
+    <item
+        android:id="@+id/nav_chat"
+        android:title="Chat"
+        android:icon="@drawable/ic_chat"
+        android:orderInCategory="2"/>
+
+    <item
+        android:id="@+id/nav_add_property"
+        android:title="@string/nav_add_property"
+        android:icon="@drawable/ic_add"
+        android:orderInCategory="3"/>
+
+    <item
+        android:id="@+id/nav_my_properties"
+        android:title="@string/nav_my_properties"
+        android:icon="@drawable/ic_list"
+        android:orderInCategory="4"/>
+
+    <item
+        android:id="@+id/nav_bookings"
+        android:title="@string/nav_booking_requests"
+        android:icon="@drawable/ic_booking"
+        android:orderInCategory="5"/>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="@string/nav_logout"
+        android:icon="@drawable/ic_logout"
+        android:orderInCategory="6"/>
+
+</menu>

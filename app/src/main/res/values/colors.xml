@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Primary Brand -->
+    <color name="sm_blue">#3F5F7D</color>
+    <color name="sm_blue_dark">#2F4A63</color>
+    <color name="sm_blue_light">#5C7E9E</color>
+
+    <color name="sm_green">#8FB6A1</color>
+    <color name="sm_green_dark">#6E9E88</color>
+    <color name="sm_green_light">#A7C8B5</color>
+
+    <!-- Background -->
+    <color name="sm_background">#FDFDFD</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="card_shadow">#1A000000</color>
+
+    <!-- Accent -->
+    <color name="accent_soft">#E8F1F8</color>
+
+    <!-- Text -->
+    <color name="text_primary">#2E3A46</color>
+    <color name="text_secondary">#5F6F78</color>
+
+    <!-- Neutral -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="divider_gray">#E0E0E0</color>
+
+    <!-- Status -->
+    <color name="status_pending">#F59E0B</color>
+    <color name="status_approved">#43A047</color>
+    <color name="status_rejected">#D32F2F</color>
+
+</resources>

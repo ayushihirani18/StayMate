@@ -1,0 +1,162 @@
+<resources>
+
+    <!-- App -->
+    <string name="app_name">StayMate</string>
+    <string name="app_status">StayMate is Live 🚀</string>
+
+    <!-- Login Screen -->
+    <string name="login_title">Welcome Back</string>
+    <string name="login_subtitle">Find your perfect stay</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="register_prompt">New user? Register</string>
+
+    <!-- Register Screen -->
+    <string name="hint_name">Full Name</string>
+    <string name="btn_register">Register</string>
+    <string name="select_role_label">Select Role</string>
+
+    <!-- Role Options -->
+    <string-array name="role_options">
+        <item>Select Role</item>
+        <item>Tenant</item>
+        <item>Owner</item>
+    </string-array>
+
+    <!-- Validation Errors -->
+    <string name="error_email_required">Email is required</string>
+    <string name="error_password_required">Password is required</string>
+    <string name="error_invalid_email">Enter a valid email</string>
+    <string name="error_select_role">Please select a role</string>
+
+    <!-- Owner Dashboard -->
+    <string name="owner_home_title">Owner Dashboard</string>
+    <string name="welcome_owner">Welcome, Owner 👋</string>
+    <string name="owner_add_property">Add Property</string>
+    <string name="manage_properties">Manage your properties easily</string>
+    <string name="zero_value">0</string>
+    <string name="total_properties">Total Properties</string>
+
+    <string name="required">Required</string>
+    <string name="property_added">Property Added Successfully</string>
+    <string name="property_updated">Property Updated</string>
+    <string name="update_property">Update Property</string>
+
+    <string name="user_not_logged_in">User not logged in</string>
+
+    <!-- Property Info -->
+    <string name="location_format">Location: %1$s</string>
+    <string name="gender_format">Gender: %1$s</string>
+    <string name="type_format">Type: %1$s</string>
+    <string name="contact_format">Contact: %1$s</string>
+
+    <!-- Add Property Form -->
+    <string name="ic_home">Home</string>
+    <string name="add_new_property">Add New Property</string>
+    <string name="add_property_text">List your space and attract more tenants</string>
+
+    <string name="property_name">Property Name</string>
+    <string name="location">Location</string>
+
+    <!-- Property Types -->
+    <string name="select_property_type">Select property type</string>
+    <string-array name="property_types">
+        <item>Select Property Type</item>
+        <item>PG</item>
+        <item>Flat</item>
+        <item>Hostel</item>
+    </string-array>
+
+    <!-- Gender Types -->
+    <string name="select_gender_type">Select gender type</string>
+    <string-array name="gender_types">
+        <item>Select Gender Type</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Co-ed</item>
+    </string-array>
+
+    <!-- Rent -->
+    <string name="rent_min">Minimum Rent</string>
+    <string name="rent_max">Maximum Rent</string>
+
+    <!-- Contact -->
+    <string name="contact_number">Contact Number</string>
+    <string name="india_code">+91</string>
+
+    <!-- Amenities -->
+    <string name="amenities_collapsed">Amenities ▼</string>
+    <string name="amenities_expanded">Amenities ▲</string>
+
+    <string name="wifi">WiFi</string>
+    <string name="ac">AC</string>
+    <string name="parking">Parking</string>
+
+    <!-- Images -->
+    <string name="property_image">Property Images</string>
+    <string name="desc_selected_image">Selected property image</string>
+    <string name="desc_remove_image">Remove image</string>
+
+    <!-- Messages -->
+    <string name="login_success">Login Successful</string>
+    <string name="registration_success">Registration Successful</string>
+    <string name="password_reset_sent">Password reset email sent</string>
+
+    <!-- Drawer -->
+    <string name="open">Open Drawer</string>
+    <string name="close">Close Drawer</string>
+
+    <!-- Tenant Dashboard -->
+    <string name="tenant_home_title">Tenant Dashboard</string>
+
+    <!-- Filters -->
+    <string name="filter_title">Filters</string>
+    <string name="filter_amenities">Amenities</string>
+    <string name="filter_wifi">WiFi</string>
+    <string name="filter_ac">AC</string>
+    <string name="filter_parking">Parking</string>
+    <string name="filter_rent">Rent Range</string>
+    <string name="min_rent">Min ₹</string>
+    <string name="max_rent">Max ₹</string>
+    <string name="apply_filters">Apply Filters</string>
+
+    <!-- Owner Header -->
+    <string name="owner_name_placeholder">Owner Name</string>
+    <string name="owner_email_placeholder">email@example.com</string>
+
+    <!-- Browse -->
+    <string name="search_location">Search location...</string>
+    <string name="filter">Filter</string>
+    <string name="no_properties_found">No properties found</string>
+
+    <!-- Property Details -->
+    <string name="call_owner">Call Owner</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="no_saved_properties">No saved properties yet</string>
+
+    <string name="save_property">Save property</string>
+    <string name="edit_property">Edit property</string>
+    <string name="delete_property">Delete property</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_browse">Browse</string>
+    <string name="nav_saved">Saved</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Owner Menu -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_add_property">Add Property</string>
+    <string name="nav_my_properties">My Properties</string>
+    <string name="nav_booking_requests">Booking Requests</string>
+    <string name="nav_logout">Logout</string>
+
+    <string name="nav_my_bookings">My Bookings</string>
+    <string name="nav_messages">Messages</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_help_support">Help and Support</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

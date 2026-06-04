@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:padding="16dp"
+    android:elevation="6dp"
+    android:background="@drawable/drawer_header_bg">
+
+    <!-- Profile Image -->
+    <FrameLayout
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="8dp">
+
+        <!-- PROFILE IMAGE -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/profile_placeholder"
+            android:background="@drawable/profile_bg_circle"
+            android:padding="1dp"/>
+
+        <!-- INITIALS -->
+        <TextView
+            android:id="@+id/tvDrawerInitials"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:gravity="center"
+            android:text="AH"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="@drawable/bg_circle_blue"/>
+
+    </FrameLayout>
+    <!-- Name -->
+    <TextView
+        android:id="@+id/tvOwnerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ayushi Hirani"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvRole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Role"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:background="@drawable/badge_bg"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="2dp"
+        android:padding="4dp" />
+
+    <!-- Email -->
+    <TextView
+        android:id="@+id/tvOwnerEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email@example.com"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:alpha="0.75"/>
+
+</LinearLayout>

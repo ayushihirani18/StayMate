@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "805987470652",
+    "project_id": "staymateapp-fa601",
+    "storage_bucket": "staymateapp-fa601.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805987470652:android:3b664b3852921d97b32239",
+        "android_client_info": {
+          "package_name": "com.example.staymateapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8lpzZufic4eoTReFRxEcRAFNC_-2ahM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

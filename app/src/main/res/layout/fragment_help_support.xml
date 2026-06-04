@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help and Support"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20sp"/>
+        <!-- FAQ -->
+        <Button
+            android:id="@+id/btnFAQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="❓ FAQs"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- EMAIL -->
+        <Button
+            android:id="@+id/btnEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📧 Email Support"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- CALL -->
+        <Button
+            android:id="@+id/btnCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📞 Call Support"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- REPORT -->
+        <Button
+            android:id="@+id/btnReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🐞 Report Issue"/>
+
+    </LinearLayout>
+
+</ScrollView>

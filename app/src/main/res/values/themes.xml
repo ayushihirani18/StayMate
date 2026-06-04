@@ -1,0 +1,25 @@
+<resources>
+
+    <style name="Theme.StayMateApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Primary -->
+        <item name="colorPrimary">@color/sm_blue</item>
+        <item name="colorPrimaryVariant">@color/sm_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary -->
+        <item name="colorSecondary">@color/sm_green</item>
+        <item name="colorSecondaryVariant">@color/sm_green</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Background -->
+        <item name="android:windowBackground">@color/sm_background</item>
+        <item name="android:statusBarColor">@color/sm_background</item>
+        <item name="android:navigationBarColor">@color/sm_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+
+    </style>
+
+</resources>

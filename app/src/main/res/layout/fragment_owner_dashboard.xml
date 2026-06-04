@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sm_background"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Welcome Text -->
+        <TextView
+            android:id="@+id/tvWelcomeOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_owner"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"/>
+
+        <TextView
+            android:id="@+id/tvManageProperties"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/manage_properties"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="20dp"/>
+
+
+        <!-- Total Properties Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@color/sm_green">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvTotalProperties"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero_value"
+                    android:textSize="28sp"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold"
+                    tools:text="3"/>
+
+                <TextView
+                    android:id="@+id/tvTotalLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_properties"
+                    android:textColor="@color/text_primary"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

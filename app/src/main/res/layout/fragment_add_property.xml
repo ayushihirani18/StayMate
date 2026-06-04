@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_gradient"
+    android:padding="24dp"
+    tools:ignore="Contrast,TooWide">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="@drawable/bg_header_glass">
+
+            <!-- Title with icon -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_new_property"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:letterSpacing="0.04"
+                app:drawableStartCompat="@drawable/ic_home"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"/>
+
+            <!-- Subtitle -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_property_text"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:alpha="0.85"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Property Name -->
+        <EditText
+            android:id="@+id/etPropertyName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_input_rounded"
+            android:hint="@string/property_name"
+            android:paddingHorizontal="16dp"
+            android:inputType="textCapWords"
+            android:autofillHints="name"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"/>
+
+        <!-- Location -->
+        <EditText
+            android:id="@+id/etLocation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_input_rounded"
+            android:hint="@string/location"
+            android:paddingHorizontal="16dp"
+            android:inputType="textCapWords"
+            android:autofillHints="postalAddress"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"/>
+
+        <!-- Property Type -->
+        <Spinner
+            android:id="@+id/spPropertyType"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_input_rounded"
+            android:paddingHorizontal="16dp"/>
+
+        <!-- Gender Type -->
+        <Spinner
+            android:id="@+id/spGenderType"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_input_rounded"
+            android:paddingHorizontal="16dp"/>
+
+        <!-- Minimum Rent -->
+        <EditText
+            android:id="@+id/etMinRent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_input_rounded"
+            android:hint="@string/rent_min"
+            android:paddingHorizontal="16dp"
+            android:inputType="number"
+            android:autofillHints="postalAddress"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"/>
+
+        <!-- Maximum Rent -->
+        <EditText
+            android:id="@+id/etMaxRent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_input_rounded"
+            android:hint="@string/rent_max"
+            android:paddingHorizontal="16dp"
+            android:inputType="number"
+            android:autofillHints="postalAddress"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"/>
+
+        <!-- Contact -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_input_rounded"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/india_code"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etContact"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/contact_number"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:paddingHorizontal="6dp"
+                android:digits="0123456789"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:autofillHints="phone"/>
+
+        </LinearLayout>
+
+        <!-- Amenities Header -->
+        <TextView
+            android:id="@+id/tvAmenitiesHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/amenities_collapsed"
+            android:textSize="18sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="24dp"
+            android:padding="12dp"
+            android:background="@drawable/bg_input_rounded"/>
+
+        <!-- Amenities -->
+        <LinearLayout
+            android:id="@+id/layoutAmenities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:background="@drawable/bg_input_rounded"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/cbWifi"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/wifi"/>
+
+            <CheckBox
+                android:id="@+id/cbAC"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/ac"/>
+
+            <CheckBox
+                android:id="@+id/cbParking"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/parking"/>
+
+        </LinearLayout>
+
+        <!-- Images -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/property_image"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvImages"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Add Property Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddProperty"
+            android:layout_width="200dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:text="@string/owner_add_property"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/sm_blue"
+            app:cornerRadius="12dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/sm_blue"
+        android:title="Property Details"
+        android:titleTextColor="@color/white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- 🔥 NEW SLIDER -->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerImages"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"/>
+
+            <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+                android:id="@+id/dotsIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"/>
+
+            <!-- NAME -->
+            <TextView
+                android:id="@+id/txtPropertyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <!-- LOCATION -->
+            <TextView
+                android:id="@+id/txtLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"/>
+
+            <!-- RENT -->
+            <TextView
+                android:id="@+id/txtRent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/txtType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PG"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:background="@drawable/bg_rent_badge"/>
+
+                <TextView
+                    android:id="@+id/txtGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_rent_badge"/>
+
+            </LinearLayout>
+            <!-- BUTTON -->
+            <Button
+                android:id="@+id/btnBookNow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book Now"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/btnCallOwner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📞 Call Owner"
+                android:layout_marginTop="12dp"/>
+
+            <Button
+                android:id="@+id/btnWhatsappOwner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💬 WhatsApp Owner"
+                android:layout_marginTop="8dp"/>
+            <Button
+                android:id="@+id/btnChatOwner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💬 Chat Owner"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/btnAddReview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⭐ Add Review and Rate"
+                android:layout_marginTop="16dp"/>
+
+            <!-- ⭐ Rating Summary -->
+            <TextView
+                android:id="@+id/tvOverallRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0 ⭐"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/tvTotalReviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No reviews yet"
+                android:textSize="12sp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- 📋 Reviews List -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerReviews"
+                android:nestedScrollingEnabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

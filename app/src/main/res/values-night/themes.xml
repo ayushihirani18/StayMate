@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base Night Theme -->
+    <style name="Theme.StayMateApp"
+        parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/sm_blue</item>
+        <item name="colorPrimaryVariant">@color/sm_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/sm_green</item>
+        <item name="colorSecondaryVariant">@color/sm_green</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:windowBackground">#121212</item>
+        <item name="android:statusBarColor">#121212</item>
+
+    </style>
+
+</resources>

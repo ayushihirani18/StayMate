@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sm_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 🔥 PROFILE HEADER CARD -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/sm_blue">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="20dp">
+
+                <!-- 🔥 IMAGE + EDIT ICON -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="50dp"
+                    app:cardElevation="8dp"
+                    app:cardUseCompatPadding="true">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <!-- 🔥 PROFILE IMAGE -->
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profileImage"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/ic_profile"
+                            app:civ_border_width="3dp"
+                            app:civ_border_color="@color/white"/>
+
+                        <!-- 🔥 INITIALS TEXT -->
+                        <TextView
+                            android:id="@+id/tvInitials"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:gravity="center"
+                            android:text="AH"
+                            android:includeFontPadding="false"
+                            android:textSize="30sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:elevation="6dp"
+                            android:padding="2dp"
+                            android:background="@drawable/bg_circle_blue"/>
+
+                        <!-- 🔥 EDIT ICON -->
+                        <ImageView
+                            android:id="@+id/editProfileIcon"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_gravity="bottom|end"
+                            android:translationX="4dp"
+                            android:translationY="4dp"
+                            android:background="@drawable/bg_circle_white"
+                            android:padding="6dp"
+                            android:src="@drawable/ic_edit"
+                            android:foreground="?attr/selectableItemBackgroundBorderless"/>
+
+                    </FrameLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <!-- NAME -->
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rohan Patel"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <!-- EMAIL -->
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="rohanpatel.owner@staymate.com"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"/>
+
+                <!-- ROLE -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Owner Account"
+                    android:textColor="#DDFFFFFF"
+                    android:textSize="12sp"
+                    android:layout_marginTop="4dp"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- 🔥 EDIT BUTTON -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEdit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="10dp"
+            android:text="EDIT PROFILE"
+            android:textStyle="bold"
+            android:foreground="?attr/selectableItemBackground"
+            app:backgroundTint="@color/sm_blue"
+            app:cornerRadius="12dp"
+            app:icon="@drawable/ic_edit"
+            app:iconTint="@color/white"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp"/>
+
+        <!-- 🔥 LOGOUT BUTTON -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="LOGOUT"
+            android:textStyle="bold"
+            android:foreground="?attr/selectableItemBackground"
+            app:backgroundTint="@color/status_rejected"
+            app:cornerRadius="12dp"
+            app:icon="@drawable/ic_logout"
+            app:iconTint="@color/white"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp"/>
+
+        <!-- 🔥 OWNER INFO CARD -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Section Title -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Owner Info"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"/>
+
+                <!-- Phone -->
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone: 9876543210"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="6dp"/>
+
+                <!-- City -->
+                <TextView
+                    android:id="@+id/tvCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City: Ahmedabad"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="6dp"/>
+
+                <!-- Total Properties -->
+                <TextView
+                    android:id="@+id/tvTotalProperties"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Properties: 4"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="6dp"/>
+
+                <!-- Total Bookings -->
+                <TextView
+                    android:id="@+id/tvTotalBookings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Bookings: 1"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="6dp"/>
+                <TextView
+                    android:id="@+id/tvBookingRequests"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Booking Requests: 0"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="6dp"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- DIVIDER -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/divider_gray"/>
+
+    </LinearLayout>
+
+</ScrollView>

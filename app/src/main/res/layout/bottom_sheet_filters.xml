@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_bottom_sheet"
+    android:padding="20dp">
+
+    <!-- Drag indicator -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_sheet_handle" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvFilterTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filter_title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/text_primary"/>
+
+    <!-- Amenities title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filter_amenities"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/text_primary"/>
+
+    <!-- Chips -->
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupAmenities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:chipSpacingHorizontal="10dp"
+        app:chipSpacingVertical="8dp">
+
+        <!-- WiFi -->
+        <com.google.android.material.chip.Chip
+            android:id="@+id/filterWifi"
+            style="@styles/CustomFilterChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filter_wifi"
+            android:checkable="true"/>
+
+        <!-- AC -->
+        <com.google.android.material.chip.Chip
+            android:id="@+id/filterAC"
+            style="@styles/CustomFilterChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filter_ac"
+            android:checkable="true"/>
+
+        <!-- Parking -->
+        <com.google.android.material.chip.Chip
+            android:id="@+id/filterParking"
+            style="@styles/CustomFilterChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filter_parking"
+            android:checkable="true"/>
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <!-- 🔥 GENDER FILTER -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbAny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Any"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"/>
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"/>
+        <RadioButton
+            android:id="@+id/rbCoed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Co-ed"/>
+    </RadioGroup>
+
+    <!-- 🔥 PROPERTY TYPE FILTER -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Property Type"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbAllType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rbPG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PG"/>
+
+        <RadioButton
+            android:id="@+id/rbFlat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flat"/>
+
+        <RadioButton
+            android:id="@+id/rbHostel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hostel"/>
+    </RadioGroup>
+
+    <!-- Rent title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filter_rent"
+        android:textStyle="bold"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/text_primary"/>
+
+    <!-- Rent inputs -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/sm_blue"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusBottomEnd="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etMinRent"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/min_rent"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/sm_blue"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusBottomEnd="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etMaxRent"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/max_rent"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <!-- Apply Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnApplyFilters"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/apply_filters"
+        android:textStyle="bold"
+        android:elevation="4dp"
+        android:letterSpacing="0.05"
+        app:backgroundTint="@color/sm_blue"
+        app:cornerRadius="12dp"/>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <!-- PROFILE IMAGE -->
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_profile"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bg_circle_white"/>
+
+        <!-- DETAILS -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="12dp">
+
+            <!-- TITLE -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Looking for female roommate"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tvOwnerTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You"
+                android:textSize="10sp"
+                android:textColor="@android:color/white"
+                android:background="@color/sm_blue"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"/>
+
+            <!-- LOCATION -->
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📍 Ahmedabad, Navrangpura"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp"/>
+
+            <!-- BUDGET -->
+            <TextView
+                android:id="@+id/tvBudget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💰 ₹6000/month"
+                android:textSize="13sp"
+                android:layout_marginTop="2dp"/>
+
+            <!-- PREFERENCES -->
+            <TextView
+                android:id="@+id/tvPreference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👤 Preferences"
+                android:textSize="12sp"
+                android:textColor="#666"
+                android:layout_marginTop="2dp"/>
+        </LinearLayout>
+
+        <!-- CONTACT BUTTON -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnChat"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Chat"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            app:cornerRadius="12dp"
+            app:backgroundTint="@color/sm_blue"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Delete"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            app:cornerRadius="12dp"
+            app:backgroundTint="@android:color/holo_red_dark"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

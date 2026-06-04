@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <ImageView
+            android:id="@+id/imgProperty"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_home"/>
+
+        <!-- Property Name -->
+        <TextView
+            android:id="@+id/txtPropertyName"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Rent -->
+        <TextView
+            android:id="@+id/txtRent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"/>
+
+        <!-- User Name -->
+        <TextView
+            android:id="@+id/txtUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"/>
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/status_bg_pending"/>
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/btnApprove"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Approve"/>
+
+            <Button
+                android:id="@+id/btnReject"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Reject"
+                android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+        <!-- Cancel Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Cancel Booking"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                app:cornerRadius="12dp"
+                app:backgroundTint="@color/status_rejected"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>
