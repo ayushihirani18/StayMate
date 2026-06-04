@@ -60,9 +60,9 @@ public class OwnerProfileActivity extends AppCompatActivity {
 
         // 🔥 CLOUDINARY INIT (same as tenant)
         Map<String, String> config = new HashMap<>();
-        config.put("cloud_name", "dxr18qf7s");
-        config.put("api_key", "857531648886898");
-        config.put("api_secret", "Pnufuc4oq_ahUTVMNqt-6cLtwJ8");
+        config.put("cloud_name", "");
+        config.put("api_key", "");
+        config.put("api_secret", "");
 
         try {
             MediaManager.init(this, config);
